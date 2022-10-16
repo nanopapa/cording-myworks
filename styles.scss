@@ -1,0 +1,303 @@
+/*
+================================================================
+body
+================================================================
+*/
+html {
+    font-size: 62.5%;
+}
+body {
+    color: #24292e;
+}
+a {
+    text-decoration: none;
+    color: #24292e;
+}
+img {
+    max-width: 100%;
+}
+li {
+    list-style: none;
+}
+
+
+/*
+================================================================
+header
+================================================================
+*/
+
+header{
+    height: 270px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 4%;
+    margin: 0 auto;
+    max-width: 960px;
+        .header__list ul{
+            display: flex;
+            padding:10px 0;
+                li{
+                    font-size: 1.4rem;
+                    margin-left: 30px;
+                    &:hover{
+                        opacity: .7;
+
+                    }
+                }
+                img{
+                    height: 20px;
+                }
+        }
+}
+
+/*
+================================================================
+mainvisual
+================================================================
+*/
+
+.mainvisual {
+    margin-bottom: 80px;
+    width: 100%;
+ img{
+    height: 420px;
+    object-fit: cover;
+    width: 100%;
+}
+
+}
+/*
+================================================================
+About
+================================================================
+*/
+
+main{
+    text-align: center;
+    max-width: 960px;
+    padding:0 4%;
+    margin:0 auto;
+    font-size: 1.4rem;
+        
+    .section__title{
+            margin-bottom: 65px;
+            font-size: 2.4rem;
+
+        }
+        .About{
+                margin-bottom: 140px;    
+                } p{
+                text-align: left;
+                margin-bottom: 30px;
+                }
+                .About__txt{
+                    text-align: justify;
+                }
+}
+
+
+
+
+
+/*
+================================================================
+Works
+================================================================
+*/
+.Works{
+    margin-bottom: 150px;
+}
+
+.Works__list{
+    // display: flex;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+    // margin-bottom: 50px;
+    //     li{
+    //         width: 31%;
+    //         margin-bottom: 23px;
+    //     }
+
+    display: flex;
+    flex-wrap: wrap;
+    row-gap:23px;
+    column-gap:3%;
+        li{
+            width: 31%;
+        }
+}
+/*
+================================================================
+News
+================================================================
+*/
+
+.News{
+    margin-bottom: 130px;
+}
+
+.News dl{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    border-top: 1px solid #c8c8c8;
+        dt{
+            width: 20%;
+            padding:15px;
+            border-bottom: 1px solid #c8c8c8;
+        }
+        dd{
+            width: 80%;
+            padding:15px;
+            border-bottom: 1px solid #c8c8c8;
+            text-align: left;
+        
+        }
+}
+
+
+/*
+================================================================
+Contact
+================================================================
+*/
+
+.Contact dl{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+     dt{
+        width: 15%;
+        text-align: left;
+     }
+     dd{
+        width: 85%;
+        margin-bottom: 10px;
+     }
+}
+
+dl dd textarea{
+    height: 160px;
+}
+
+dl dd input,
+dl dd textarea{
+    border: 1px solid #c8c8c8;
+    width: 100%;
+    padding:10px;
+}
+
+.button{
+    width: 200px;
+    // height: 50px;
+    margin:0 auto;
+    background-color: #24292E;
+    margin-top: 10px;
+        input{
+            width: 200px;
+            // height: 50px;
+            // line-height: 50px;
+            text-align: center;
+            color: #fff;
+            display: inline-block;
+            border:1px solid #24292E;
+            padding:15px 0;
+            &:hover{
+                background-color: #fff;
+                color:#24292E;
+            }
+        }
+}
+
+
+/*
+================================================================
+copyright
+================================================================
+*/
+
+.copyright{
+    margin-top: 130px;
+    height: 30px;
+    background-color: #24292e;
+
+        p{
+            line-height: 30px;
+            text-align: center;
+            color:#fff;
+    
+        }
+}
+
+
+
+/*
+================================================================
+SP
+================================================================
+*/
+
+@media (max-width:600px){
+    header{
+        flex-direction: column;
+        margin-top: 20px;
+        max-width: 100%;
+        height: auto;
+        
+        .header__list ul li{
+            font-size: 1.3rem;
+            margin-left: 20px;
+            &:first-child{
+                margin-left: 0;
+            }
+        }
+    }
+
+    .section__title{
+        margin-bottom: 40px;
+    }
+
+    .Works {
+        margin-bottom: 90px;
+    }
+    .Works__list{
+        flex-direction: column;
+        li{
+            width: 100%;
+        }
+    }
+
+    .News dl{
+        flex-direction: column;
+        text-align: left;
+
+        dt{
+          width: 100%;
+          border:none;
+          padding-bottom:0;
+        }
+        dd{
+        width: 100%;
+        padding-top:0;
+        }
+    }
+
+.Contact dl{
+    flex-direction: column;
+    dt{
+        width: 100%;
+    }
+    dd{
+        width: 100%;
+    }
+}
+
+.copyright{
+    margin-top: 70px;
+}
+}
+
+
+
